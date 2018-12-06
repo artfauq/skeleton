@@ -62,7 +62,7 @@ To compile the project's sources and push it to a `gh-pages` branch, run:
 
 `$ npm run deploy`
 
-This command uses internally the `npm run build` command and the [gh-pages](https://www.npmjs.com/package/gh-pages) npm package to deploy the compiled application to GitHub Pages.
+This command uses internally the `npm run build` command and the [gh-pages](https://www.npmjs.com/package/gh-pages) npm package.
 
 ## Structure
 
