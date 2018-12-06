@@ -15,8 +15,8 @@ See the [docs](docs/README.md) folder.
 - Style linting with [stylelint](https://github.com/stylelint/stylelint)
 - JavaScript linting with [ESLint](https://eslint.org/)
 - Pretty code with [Prettier](https://github.com/prettier/prettier)
-- CSS autoprefixing with
-- CSS and JS minification
+- CSS autoprefixing and minification
+- JavaScript minification
 - Image optimization
 - Pre-commit lint hook
 
