@@ -9,10 +9,10 @@ See the [docs](docs/README.md) folder.
 ## Features
 
 - ES2015 support using [Babel](https://babeljs.io/)
-- [Sass](http://sass-lang.com/) support
+- [SASS](http://sass-lang.com/) support
 - HTTP preview server (with Live Reload)
 - Cross-device preview and synchronization with [BrowserSync](https://browsersync.io/)
-- Style linting with [stylelint](https://github.com/stylelint/stylelint)
+- Style linting with [Stylelint](https://github.com/stylelint/stylelint)
 - JavaScript linting with [ESLint](https://eslint.org/)
 - Pretty code with [Prettier](https://github.com/prettier/prettier)
 - CSS autoprefixing and minification
