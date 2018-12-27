@@ -118,7 +118,6 @@ gulp.task('useref', () =>
     .pipe(useref())
     .pipe(gulpif('*.css', autoprefixer()))
     .pipe(gulpif('*.css', cssnano()))
-
     .pipe(gulpif('*.js', uglify()))
     .on('error', gutil.log)
     .pipe(gulp.dest(config.index.dest))
