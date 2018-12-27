@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "start": "gulp",
+    "start": "gulp serve",
     "build": "gulp build",
-    "serve:dist": "gulp browserSync",
+    "serve:dist": "gulp serve",
     "deploy": "npm run build && gh-pages -d dist",
     "lint": "eslint --fix \"**/*.js\" && prettier-stylelint \"src/**/*.scss\" --write"
   },
