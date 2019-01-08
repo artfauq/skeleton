@@ -35,7 +35,7 @@ const config = {
     dest: 'dist'
   },
   sass: {
-    src: 'src/scss/**/*.scss',
+    src: 'src/styles/**/*.scss',
     dest: 'dist/css'
   },
   scripts: {
