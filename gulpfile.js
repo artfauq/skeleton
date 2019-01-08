@@ -19,8 +19,8 @@ const config = {
     baseDir: ['./', 'dist']
   },
   assets: {
-    src: 'src/assets/**/*',
-    dest: 'dist/assets'
+    src: ['src/assets/**/*', 'src/*.{xml,txt,json,htaccess}'],
+    dest: 'dist'
   },
   fonts: {
     src: 'src/fonts/**/*',
@@ -30,7 +30,7 @@ const config = {
     src: 'src/img/**/*',
     dest: 'dist/img'
   },
-  index: {
+  html: {
     src: 'src/index.html',
     dest: 'dist'
   },
@@ -52,7 +52,7 @@ const clean = () => del('dist');
 /**
  * Copy html files
  */
-const copyHtml = () => gulp.src(config.index.src).pipe(gulp.dest(config.index.dest));
+const copyHtml = () => gulp.src(config.html.src).pipe(gulp.dest(config.html.dest));
 
 /**
  * Copy fonts
@@ -67,7 +67,7 @@ const copyImages = () => gulp.src(config.images.src).pipe(gulp.dest(config.image
 /**
  * Copy assets
  */
-const copyAssets = () => gulp.src(config.assets.src).pipe(gulp.dest(config.assets.dest));
+const copyAssets = () => gulp.src(config.assets.src, { base: 'src/' }).pipe(gulp.dest(config.assets.dest));
 
 /**
  * Copy static files
@@ -116,7 +116,7 @@ const parseHtml = () =>
     .pipe(gulpif('*.css', autoprefixer()))
     .pipe(gulpif('*.js', uglify()))
     .on('error', gutil.log)
-    .pipe(gulp.dest(config.index.dest));
+    .pipe(gulp.dest(config.html.dest));
 
 /**
  * Minify images
@@ -131,7 +131,7 @@ const minifyImages = () =>
  * Watch for changes
  */
 const watch = () => {
-  gulp.watch(config.index.src, copyHtml).on('change', browserSync.reload);
+  gulp.watch(config.html.src, copyHtml).on('change', browserSync.reload);
   gulp.watch(config.sass.src, compileSass).on('change', browserSync.reload);
   gulp.watch(config.scripts.src, compileScripts).on('change', browserSync.reload);
   gulp.watch(config.fonts.src, copyFonts).on('change', browserSync.reload);
