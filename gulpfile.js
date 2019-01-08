@@ -19,7 +19,7 @@ const config = {
     baseDir: ['./', 'dist']
   },
   assets: {
-    src: ['src/assets/**/*', 'src/*.{xml,txt,json,htaccess}'],
+    src: ['src/assets/**/*', 'src/*.{xml,txt,json}'],
     dest: 'dist'
   },
   fonts: {
