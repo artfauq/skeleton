@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "gulp serve",
+    "start": "gulp",
     "build": "gulp build",
     "serve:dist": "gulp serve",
     "deploy": "npm run build && gh-pages -d dist",
@@ -10,10 +10,6 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arthurfauq/skeleton.git"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
