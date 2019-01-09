@@ -1,6 +1,16 @@
-// Main Sass file
+@charset 'utf-8';
 
-@import 'variables';
-@import 'typography';
-@import 'mixins';
-@import 'base';
+// 1. Configuration and helpers
+@import 'abstracts/glob';
+
+// 2. Vendors
+@import 'vendors/glob';
+
+// 3. Base
+@import 'base/glob';
+
+// 4. Components
+@import 'components/glob';
+
+// 5. Themes
+@import 'themes/glob';
