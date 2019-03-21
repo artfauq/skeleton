@@ -1,16 +1,16 @@
 @charset 'utf-8';
 
 // 1. Configuration and helpers
-@import 'abstracts/glob';
+@import 'abstracts/module';
 
 // 2. Vendors
-@import 'vendors/glob';
+@import 'vendors/module';
 
 // 3. Base
-@import 'base/glob';
+@import 'base/module';
 
 // 4. Components
-@import 'components/glob';
+@import 'components/module';
 
 // 5. Themes
-@import 'themes/glob';
+@import 'themes/module';
