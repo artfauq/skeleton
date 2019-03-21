@@ -8,7 +8,7 @@ See the [docs](docs/README.md) folder.
 
 ## Features
 
-- ES2015 support using [Babel](https://babeljs.io/)
+- ES7 syntax support using [Babel](https://babeljs.io/)
 - [SASS](http://sass-lang.com/) support
 - HTTP preview server (with Live Reload)
 - Cross-device preview and synchronization with [BrowserSync](https://browsersync.io/)
