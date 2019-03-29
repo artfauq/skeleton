@@ -16,10 +16,10 @@ const useref = require('gulp-useref');
 const config = {
   sourcemaps: './maps',
   browserSync: {
-    baseDir: 'dist'
+    baseDir: ['./', 'dist']
   },
   assets: {
-    src: ['src/assets/**/*', 'src/*.{xml,txt,json}'],
+    src: ['src/assets/**/*', 'src/*.{ico,xml,txt,json}'],
     dest: 'dist'
   },
   fonts: {

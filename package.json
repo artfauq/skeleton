@@ -4,12 +4,12 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp",
     "build": "gulp build",
-    "serve:dist": "gulp serve",
+    "start": "gulp serve",
     "deploy": "npm run build && gh-pages -d dist",
-    "lint": "eslint \"src/**/*.js\" && stylelint \"src/**/*.scss\" && prettier --ignore-path .gitignore --check \"**/*.{html,css,scss,js,json,md}\"",
-    "lint:fix": "eslint \"src/**/*.js\" --fix && stylelint \"src/**/*.scss\" --fix && prettier --ignore-path .gitignore --check \"**/*.{html,css,scss,js,json,md}\""
+    "lint": "eslint \"src/**/*.js\" && stylelint \"src/**/*.{css,scss}\" && prettier --ignore-path .gitignore --check \"**/*.{html,css,scss,js,json,md}\"",
+    "lint:fix": "eslint \"src/**/*.js\" --fix && stylelint \"src/**/*.{css,scss}\" --fix && prettier --ignore-path .gitignore --check \"**/*.{html,css,scss,js,json,md}\""
   },
   "husky": {
     "hooks": {
@@ -21,7 +21,7 @@
       "eslint --fix",
       "git add"
     ],
-    "*.scss": [
+    "*.{css,scss}": [
       "stylelint --fix",
       "git add"
     ],
@@ -30,9 +30,7 @@
       "git add"
     ]
   },
-  "dependencies": {
-    "lint-staged": "^8.1.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
@@ -41,7 +39,7 @@
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-prettier": "^3.0.1",
     "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
@@ -59,6 +57,7 @@
     "gulp-useref": "^3.1.2",
     "gulp-util": "^3.0.8",
     "husky": "^1.2.0",
+    "lint-staged": "^8.1.5",
     "prettier": "^1.15.2",
     "run-sequence": "^1.2.2",
     "stylelint": "^9.8.0",

@@ -2,6 +2,21 @@
 
 > Front-end Gulp-based boilerplate for modern web apps using SASS and ES6
 
+## Getting started
+
+[Download](https://github.com/arthurfauq/skeleton/archive/master.zip) the boilerplate code or clone it with the following command:
+
+`$ git clone https://github.com/arthurfauq/skeleton.git <project_name>`
+
+> Replace `<project_name>` with the name of your application
+
+**OPTIONAL:** reset the git repository with the following commands:
+
+```powershell
+rm -rf .git
+git init
+```
+
 ## Documentation
 
 See the [docs](docs/README.md) folder.
@@ -26,4 +41,4 @@ Project inspired by Google's [web-starter-kit](https://github.com/google/web-sta
 
 ## License
 
-MIT
+[MIT](LICENSE.md)

@@ -7,24 +7,9 @@
 [Node.js](https://nodejs.org/en/) and [Gulp](https://gulpjs.com/) are required to run the application.
 
 - Visit [this page](https://nodejs.org/en/download/) for Node.js download instructions
-- Once Node installed, open a terminal and run the following to install Gulp globally:
+- Once Node.js is installed, open a terminal and run the following to install Gulp globally:
 
 `$ npm i -g gulp`
-
-### Getting the code
-
-[Download](https://github.com/arthurfauq/skeleton/archive/master.zip) the boilerplate code or clone it with the following command:
-
-`$ git clone https://github.com/arthurfauq/skeleton.git <project name>`
-
-> Replace `<project name>` with the name of your application.
-
-_OPTIONAL:_ reset the git repository with the following commands:
-
-```
-$ rm -rf .git
-$ git init
-```
 
 ### Installation
 
@@ -40,7 +25,7 @@ Install the required dependencies:
 
 Start a local development server with the following command:
 
-`$ npm run start`
+`$ npm run dev`
 
 This will fire up a local web server at [`http://localhost:3000/`](http://localhost:3000) and watch for changes in your source files allowing the browser to reload automatically.
 
@@ -50,9 +35,11 @@ Compile the application sources to a production-ready `dist/` folder with:
 
 `$ npm run build`
 
-To preview the compiled application, run:
+### Production
 
-`$ npm run serve:dist`
+Run the compiled application from the `dist/` folder with:
+
+`$ npm run start`
 
 ### Deploy
 
@@ -63,7 +50,3 @@ To compile the project's sources and push it to a `gh-pages` branch, run:
 `$ npm run deploy`
 
 This command uses internally the `npm run build` command and the [gh-pages](https://www.npmjs.com/package/gh-pages) npm package.
-
-## Structure
-
-_Coming soon_
